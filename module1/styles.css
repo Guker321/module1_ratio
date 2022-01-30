@@ -7,7 +7,6 @@
 html {
   font-family: 'Ubuntu', sans-serif;
   font-size: 10px;
-  /* overflow-x: visible; */
   width: 100%;
   min-height: 100vh;
 }
@@ -396,6 +395,7 @@ button {
 }
 
 .contacts__address {
+  font-style: normal;
   font-weight: 500;
   font-size: 1.6rem;
   line-height: 180%;
