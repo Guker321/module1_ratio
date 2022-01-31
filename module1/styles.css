@@ -9,6 +9,7 @@ html {
   font-size: 10px;
   width: 100%;
   min-height: 100vh;
+  scroll-behavior: smooth;
 }
 button {
   border: none;
@@ -234,13 +235,13 @@ button {
   /* content: url('./img/feature_background_1.png'); */
 }
 .second__bg.features__item::after {
-  background: no-repeat center/80% url('./img/feature_background_1.png');
+  background: no-repeat center/80% url('./img/feature_background_2.png');
 }
 .third__bg.features__item::after {
-  background: no-repeat center/80% url('./img/feature_background_1.png');
+  background: no-repeat center/80% url('./img/feature_background_3.png');
 }
 .fourth__bg.features__item::after {
-  background: no-repeat center/80% url('./img/feature_background_1.png');
+  background: no-repeat center/80% url('./img/feature_background_4.png');
 }
 
 .item__link:link,
@@ -387,8 +388,7 @@ button {
   gap: 2rem;
   margin-bottom: 6rem;
 }
-.logo__img {
-}
+
 .logo__title {
   font-weight: 700;
   font-size: 2rem;
