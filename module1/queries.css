@@ -10,7 +10,6 @@
 
   .features__grid {
     grid-template-columns: 1fr;
-    /* justify-content: end; */
   }
   .testimonials__container {
     min-width: 72.8rem;
@@ -34,7 +33,6 @@
   }
   .footer__container {
     padding-right: 112%;
-    /* width: 158%; */
   }
   .headline__container {
     display: flex;
