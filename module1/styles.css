@@ -3,9 +3,11 @@
 	margin: 0;
 	padding: 0;
 }
-
+/*  вешать надо на body */
+/*  нет минимальной ширины сайта */
 html {
 	width: 100%;
+	/* отступ ниже лишний по всему файлу */
 	min-height: 100vh;
 
 	font-family: 'Ubuntu', sans-serif;
@@ -13,16 +15,20 @@ html {
 	scroll-behavior: smooth;
 }
 
+/*  */
+
 button {
 	border: none;
 	background-color: transparent;
 }
 
+/* Не подключен normalize */
+/* использование ед изм rem тут излишне и не практично */
 .header__container {
 	display: flex;
 	align-items: center;
 	justify-content: flex-start;
-
+	/* можно использовать короткую запись margin: 6.2rem 11.2rem 14rem 24rem; */
 	margin: 6.2rem 11.2rem 15rem 24rem;
 	margin-bottom: 14rem;
 	gap: 12rem;
@@ -37,7 +43,8 @@ button {
 .nav__link:visited {
 	transition: all 0.4s;
 	text-decoration: none;
-
+	/* цвета надо указывать в HEX, rgba применяют если нужна полупрозрачность (alfa)  */
+	/* цвета надо выносить в переменные */
 	color: rgba(75, 93, 104, 1);
 
 	font-size: 1.6rem;
@@ -158,7 +165,7 @@ button {
 
 .how__description {
 	display: inline-block;
-
+	/* в итоге будет max-width: auto, тк он перебьет max-width: 47.4rem; */
 	max-width: 47.4rem;
 	max-width: auto;
 
@@ -314,6 +321,7 @@ button {
 /* Testimonials */
 
 .testimonials__container {
+	/* Минимальная ширина перезаписывает минимальную ширину */
 	min-width: 72rem;
 	min-width: 89.8rem;
 	margin: 0 24rem 15rem 24rem;
@@ -325,7 +333,7 @@ button {
 
 .testimonials__header {
 	display: inline-block;
-
+	/* padding  перезаписывает padding */
 	padding: 0 6rem 11rem;
 	padding: 10rem 0 8rem 0;
 
